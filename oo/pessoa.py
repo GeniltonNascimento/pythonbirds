@@ -8,8 +8,8 @@ class Pessoa:
         return f'Olá {id(self)}'
 
 if __name__ == '__main__':
-    joao = Pessoa(nome='Joao')
-    genilton  = Pessoa(joao, nome='Genilton')
+    genilton = Pessoa(nome='Genilton')
+    joao = Pessoa(genilton, nome='João')
     print(Pessoa.cumprimentar(genilton))
     print(id(genilton))
     print(genilton.cumprimentar())
